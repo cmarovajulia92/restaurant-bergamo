@@ -26,8 +26,7 @@ export default function Reservations() {
           <h2 className="sec-title">Rezervovať Stôl</h2>
           <div className="sec-divider" />
           <p className="sec-desc">
-            Zarezervujte si stôl jednoducho online alebo nás kontaktujte telefonicky na čísle{' '}
-            <strong>057&nbsp;/&nbsp;779&nbsp;5340</strong>.
+            Zarezervujte si stôl jednoducho online alebo nás kontaktujte telefonicky.
           </p>
         </ScrollReveal>
 
