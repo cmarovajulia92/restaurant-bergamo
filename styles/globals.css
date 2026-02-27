@@ -854,7 +854,30 @@ header.always-dark .gift-btn { border-color:rgba(255,255,255,0.35); color:var(--
 }
 @media (max-width:640px) {
   section { padding:4.5rem 1.25rem; }
-  #header, #header.scrolled { padding:1rem 1.25rem; }
+  #header, #header.scrolled, #header.always-dark { padding:0.9rem 1.25rem; }
+
+  /* Header — zmenšíme logo a gap, skryjeme CTA text (side panel ho nahrádza) */
+  .logo img { height:30px !important; }
+  .header-right { gap:0.6rem; }
+  .header-cta { display:none; }
+
+  /* Gift button — len ikona, bez textu, menší border */
+  .gift-btn { padding:0.45rem; border-radius:8px; }
+  .gift-btn svg { width:18px; height:18px; }
+
+  /* Hamburger — väčší tap target */
+  .hamburger { padding:8px; }
+
+  /* Side panel — väčší na mobile */
+  #sidePanel { width:100vw; padding:5rem 2rem 3rem; }
+  .side-item { font-size:1rem; padding:1.2rem 0; }
+
+  /* Gift modal */
+  .gv-modal { padding:2.5rem 1.25rem 2rem; border-radius:14px; }
+  .gv-options { gap:0.75rem; }
+  .gv-option { padding:1.2rem 0.75rem; }
+  .gv-option-amount { font-size:1.8rem; }
+
   .hero-btns { flex-direction:column; align-items:stretch; }
   .btn-gold, .btn-ghost { text-align:center; }
   .form-row { grid-template-columns:1fr; gap:0; }
@@ -862,4 +885,8 @@ header.always-dark .gift-btn { border-color:rgba(255,255,255,0.35); color:var(--
   .footer-grid { grid-template-columns:1fr; gap:2rem; }
   .footer-bottom { flex-direction:column; gap:0.5rem; text-align:center; }
   .about-quote { font-size:1.3rem; }
+}
+@media (max-width:380px) {
+  #header, #header.scrolled, #header.always-dark { padding:0.75rem 1rem; }
+  .logo img { height:26px !important; }
 }
