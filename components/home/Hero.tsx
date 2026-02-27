@@ -46,6 +46,17 @@ export default function Hero() {
             <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
           </svg>
         </a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g1137997-d12035717-Reviews-Bergamo_Restaurant-Humenne_Presov_Region.html" target="_blank" rel="noopener noreferrer" aria-label="TripAdvisor">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3.5c1.24 0 2.4.32 3.4.88L17 5l1.5 1.5-1.4 1.6c.56 1 .9 2.16.9 3.4 0 3.86-3.14 7-7 7s-7-3.14-7-7 3.14-7 7-7zm0 2.5c-2.48 0-4.5 2.02-4.5 4.5S9.52 17 12 17s4.5-2.02 4.5-4.5S14.48 8 12 8zm0 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+          </svg>
+        </a>
+        <a href="https://maps.google.com/?q=Gork%C3%A9ho+1%2C+066+01+Humenn%C3%A9" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </a>
       </div>
 
       <div className="hero-scroll">
