@@ -249,6 +249,36 @@ nav .cta-nav:hover {
   display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
   opacity:0; animation:fadeUp 0.9s ease 1.3s forwards;
 }
+.hero-social {
+  position:absolute; left:2.75rem; bottom:50%;
+  transform:translateY(50%);
+  display:flex; flex-direction:column; align-items:center; gap:1.1rem;
+  opacity:0; animation:fadeIn 1s ease 2s forwards;
+  z-index:10;
+}
+.hero-social::before {
+  content:''; width:1px; height:3rem;
+  background:rgba(255,255,255,0.2);
+  display:block; margin-bottom:0.3rem;
+}
+.hero-social::after {
+  content:''; width:1px; height:3rem;
+  background:rgba(255,255,255,0.2);
+  display:block; margin-top:0.3rem;
+}
+.hero-social a {
+  color:rgba(255,255,255,0.45);
+  transition:color 0.25s, transform 0.25s;
+  display:flex;
+}
+.hero-social a:hover { color:var(--gold); transform:scale(1.15); }
+.hero-social a svg { width:17px; height:17px; }
+
+@media (max-width:640px) {
+  .hero-social { left:auto; right:1.25rem; bottom:5rem; transform:none; flex-direction:row; }
+  .hero-social::before, .hero-social::after { display:none; }
+}
+
 .hero-scroll {
   position:absolute; bottom:2.75rem; right:3rem;
   display:flex; flex-direction:column; align-items:center; gap:0.5rem;
