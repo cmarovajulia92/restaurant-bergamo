@@ -64,6 +64,16 @@ body::after {
 }
 #header.always-dark.scrolled { padding:1rem 4rem; }
 
+/* ─── HEADER MOBILE OVERRIDES (high specificity) ───────────────── */
+@media (max-width:640px) {
+  #header,
+  #header.scrolled,
+  #header.always-dark,
+  #header.always-dark.scrolled {
+    padding:0.9rem 1.25rem !important;
+  }
+}
+
 .logo {
   display:flex; align-items:center;
   line-height:1;
@@ -887,6 +897,9 @@ header.always-dark .gift-btn { border-color:rgba(255,255,255,0.35); color:var(--
   .about-quote { font-size:1.3rem; }
 }
 @media (max-width:380px) {
-  #header, #header.scrolled, #header.always-dark { padding:0.75rem 1rem; }
+  #header,
+  #header.scrolled,
+  #header.always-dark,
+  #header.always-dark.scrolled { padding:0.75rem 1rem !important; }
   .logo img { height:26px !important; }
 }

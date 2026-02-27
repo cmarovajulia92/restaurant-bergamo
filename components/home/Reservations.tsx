@@ -85,10 +85,6 @@ export default function Reservations() {
               Čoskoro vás budeme kontaktovať na potvrdenie.
             </div>
           </form>
-          <p className="form-note">
-            Alebo nás kontaktujte priamo:<br />
-            <strong>057 / 779 5340</strong> &ensp;·&ensp; Gorkého 1, Humenné
-          </p>
         </ScrollReveal>
       </div>
     </section>
